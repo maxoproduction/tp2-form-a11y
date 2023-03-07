@@ -7,8 +7,8 @@
     --couleur-titres-h1-h3: darkmagenta;
     --couleur-dominante: darkmagenta;
     --couleur-secondaire: #418cff;
-    --bg-couleur-contraste:#efefef;
-    --box-shadow:5px 5px 5px;
+    --bg-couleur-contraste: #efefef;
+    --box-shadow: 5px 5px 5px;
 }
 
 /*** Clearfix ***/
@@ -28,16 +28,17 @@ html {
 }
 
 /* Images fluides */
-img{
+img {
     max-width: 100%;
 }
 
 /*** Styles de base ***/
-abbr[title]{
+abbr[title] {
     text-decoration: none;
-    cursor:help;
+    cursor: help;
 }
-abbr[title]:hover{
+
+abbr[title]:hover {
     background-color: rgba(244, 161, 71, 0.25);
 }
 
@@ -59,7 +60,7 @@ abbr[title]:hover{
 .screen-reader-only.focusable:active,
 .screen-reader-only.focusable:focus,
 .visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus{
+.visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
