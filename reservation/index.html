@@ -8,15 +8,26 @@
 
     <title>Réservation | Auberge du jacana africain</title>
 
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="rangee">
         <a href="../index.html">
             <p><img src="../images/logo-jacana.png" alt=""></p>
             <p class="titre">Auberge du jacana africain</p>
         </a>
         <!-- Ajouter un menu : Accueil, Historique, Région, Contact, Réservation -->
+        <nav class="rangee">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../historique.html">Historique</a></li>
+                <li><a href="../region.html">Région</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="index.html">Réservation</a></li>
+            </ul>
+        </nav>
         <p> <a href="../index.html">accueil</a> | <a href="index.html">réservation</a>
     </header>
 
@@ -72,7 +83,7 @@
 
                 <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
                 Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
-                <ul>
+                <ul class="mobile-rangee">
                     <li>
                         <input required name="choixChambre" id="simple" type="radio" value="simple" />
                         <label for="simple">simple</label>

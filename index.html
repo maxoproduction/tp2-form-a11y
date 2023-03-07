@@ -8,16 +8,27 @@
 
     <title>Auberge du jacana africain</title>
 
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/carousel.js"></script>
+
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a href=" index.html">
             <p><img src="images/logo-jacana.png" alt=""></p>
-            <p class="titre">Auberge du jacana africain</p>
+            <h1 class="titre">Auberge du jacana africain</h1>
         </a>
         <!-- Ajouter un menu : Accueil, Historique, Région, Contact, Réservation -->
-        <p> <a href="index.html">accueil</a> | <a href="reservation/index.html">réservation</a> </p>
+        <nav>
+            <ul class="rangee">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="historique.html">Historique</a></li>
+                <li><a href="region.html">Région</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation/index.html">Réservation</a></li>
+            </ul>
+        </nav>
     </header>
     <blockquote>
         <p class="accroche">
@@ -29,25 +40,71 @@
         <cite>Arthur Rimbaud</cite>
     </blockquote>
 
-    <div id="carrousel">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
         <!-- C'est la mer allée avec le soleil. -->
         <!-- frank-mckenna-eXHeq48Z-Q4-unsplash -->
-        <img src="image1.jpg" alt="Image 1">
-        Photo de <a href="https://unsplash.com/@frankiefoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">frank
-            mckenna</a> sur <a href="https://unsplash.com/fr/s/photos/bord-de-mer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/carrousel/frank-mckenna-eXHeq48Z-Q4-unsplash.jpg">
+            <div class="text">
+                <p>
+                    Photo de <a href="https://unsplash.com/@frankiefoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">frank
+                        mckenna</a> sur <a href="https://unsplash.com/fr/s/photos/bord-de-mer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+        </div>
 
         <!-- La salle à manger. Déjeûner de 7h30 à 10h. -->
         <!-- alessandra-caretto-o3c-euNd_ZM-unsplash -->
-        <img src="image2.jpg" alt="Image 2">
-        Photo de <a href="https://unsplash.com/de/@alessandracaretto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alessandra
-            Caretto</a> sur <a href="https://unsplash.com/fr/s/photos/chambre-chalet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/carrousel/alessandra-caretto-o3c-euNd_ZM-unsplash.jpg">
+            <div class="text">
+                <p>
+                    Photo de <a href="https://unsplash.com/de/@alessandracaretto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alessandra
+                        Caretto</a> sur <a href="https://unsplash.com/fr/s/photos/chambre-chalet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                </p>
+            </div>
+        </div>
 
         <!-- Une sortie en kayak de mer. -->
         <!-- kirsten-miles-D5Fzg9KVfg4-unsplash -->
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/carrousel/kirsten-miles-D5Fzg9KVfg4-unsplash.jpg">
+            <div class="text">
+                <p>
+                    Photo de <a href="https://unsplash.com/fr/@sirole?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kirsten
+                        Miles</a> sur <a href="https://unsplash.com/fr/s/photos/kayak-de-mer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div id="carrousel">
+
+
+
+
+
+
         <img src="image3.jpg" alt="Image 3">
-        Photo de <a href="https://unsplash.com/fr/@sirole?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kirsten
-            Miles</a> sur <a href="https://unsplash.com/fr/s/photos/kayak-de-mer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
         <!-- Chambres à coucher avec vue. -->
         <!-- kenny-eliason-iAftdIcgpFc-unsplash -->
@@ -78,7 +135,7 @@
 
     </div>
 
-    <div id="onglets">
+    <div id="onglets rangee">
         <h2>Description</h2>
         <div>
             <p>L'auberge du Jacana africain est situé dans la Baie des griots en aval de Ste-Marie-la-Mauderne. Un bout
