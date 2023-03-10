@@ -136,3 +136,7 @@ h1 {
         opacity: 1
     }
 }
+
+label, input {
+    display: block;
+}
